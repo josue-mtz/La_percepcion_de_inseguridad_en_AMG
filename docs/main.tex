@@ -27,10 +27,10 @@
 
 \hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
 
-%Ruta de figuras (ajústala si tu estructura cambia)
+% Ruta de figuras
 \graphicspath{{figuras/}{./figuras/}{../docs/figuras/}}
 
-%Formato de captions (INVENTUM)
+% Formato de captions (INVENTUM)
 \captionsetup[figure]{
   font=small, labelfont=bf, labelsep=period,
   justification=centering, position=bottom
@@ -41,7 +41,7 @@
   justification=centering, position=top, name=TABLA
 }
 
-%Formato de encabezamientos estilo INVENTUM
+% Formato de encabezamientos estilo INVENTUM
 \titleformat{\section}
   {\normalfont\bfseries\centering\MakeUppercase}
   {\Roman{section}.}{0.5em}{}
@@ -59,12 +59,12 @@
   {\normalfont\itshape}{\alph{paragraph})}{0.3em}{}
 \titlespacing*{\paragraph}{0.6cm}{0.4ex}{0.4em}
 
-% Párrafos INVENTUM: sangría 0.5 cm, sin espacio entre párrafos
+% Párrafos INVENTUM
 \setlength{\parindent}{0.5cm}
 \setlength{\parskip}{0pt}
 \renewcommand{\baselinestretch}{1.05}
 
-% DATOS DEL ARTÍCULO — EDITA AQUÍ
+% DATOS DEL ARTÍCULO
 \title{\vspace{-1.2cm}\textbf{\uppercase{Percepción de inseguridad y no
 denuncia del delito: análisis descriptivo comparativo 2022--2024 en Zapopan
 y el Área Metropolitana de Guadalajara}}}
@@ -79,7 +79,7 @@ y el Área Metropolitana de Guadalajara}}}
 
 \begin{document}
 
-% Bloque superior (una columna, full width)
+% BLOQUE SUPERIOR: título + resumen + abstract
 \twocolumn[{%
 \begin{@twocolumnfalse}
   \maketitle
@@ -99,9 +99,12 @@ y el Área Metropolitana de Guadalajara}}}
   se mantuvo en 68.7\%. Entre quienes no denunciaron, en 2024 destacaron
   la percepción de que denunciar no sirve o implica pérdida de tiempo
   (40.2\%), la desconfianza en la autoridad (17.1\%) y la poca importancia
-  atribuida al delito (15.9\%). El estudio es descriptivo y emplea la no
-  denuncia como indicador parcial asociado a la cifra negra, no como una
-  estimación completa de esta.
+  atribuida al delito (15.9\%). Los hallazgos se interpretan desde dos
+  marcos teóricos: la teoría de la elección racional y los costes de
+  transacción de la denuncia, y la noción de círculo vicioso entre
+  impunidad y desconfianza institucional. El estudio es descriptivo y
+  emplea la no denuncia como indicador parcial asociado a la cifra negra,
+  no como una estimación completa de esta.
   \vspace{0.5em}
 
   \noindent\textbf{\textit{Palabras clave}}---%
@@ -109,13 +112,10 @@ y el Área Metropolitana de Guadalajara}}}
   ciudadana, Zapopan.
   \vspace{0.8em}
 
-  
-
   \noindent\rule{\textwidth}{0.4pt}
   \vspace{0.5em}
 \end{@twocolumnfalse}
 }]
-\makeatother
 
 \section{Introducción}
 
@@ -150,6 +150,76 @@ persistentemente altos aun cuando la incidencia delictiva oficial
 descienda y esta inconsistencia refleja una crisis de confianza
 institucional estructural, la disposición a denunciar no mejora al mismo
 ritmo que la percepción.
+
+\section{Marco Teórico y Fundamentos Académicos}
+
+\subsection{Teoría de la elección racional y costes de transacción de la denuncia}
+
+Desde la economía del crimen y la teoría de la elección racional
+\cite{becker1968}, la decisión de una víctima de acudir o no al
+Ministerio Público puede modelarse como un cálculo costo-beneficio. El
+ciudadano compara los costos esperados —tiempo de traslado, espera en la
+agencia, requisitos burocráticos, exposición a revictimización— con los
+beneficios esperados —recuperación del bien robado, sanción al
+responsable—. Cuando la probabilidad de obtener un resultado favorable
+es percibida como baja y el costo de transacción, medido en horas,
+trámites y desgaste emocional, es alto, la abstención puede ser una
+decisión racional. Diversas mediciones del INEGI han documentado que el
+tiempo dedicado a una denuncia puede oscilar entre tres y cinco horas;
+si adicionalmente se anticipa que el caso no prosperará, el cálculo se
+inclina por asumir el delito como una pérdida directa en lugar de añadir
+un costo de tiempo y revictimización. Bajo este marco, la no denuncia no
+refleja necesariamente apatía cívica, sino una evaluación racional de
+las condiciones institucionales disponibles.
+
+\subsection{Círculo vicioso de la inseguridad y desconfianza institucional}
+
+Un segundo marco interpretativo es el de los círculos viciosos de la
+inseguridad. La impunidad retroalimenta la cifra negra: cuando una
+proporción muy alta de los delitos no se denuncia, los registros
+oficiales —base para diseñar operativos, mapas de patrullaje y políticas
+de prevención— se construyen sobre datos incompletos. Ello genera
+\textit{puntos ciegos} territoriales y sectoriales: delitos que ocurren
+pero no se registran, zonas que no reciben patrullaje porque
+estadísticamente ``no tienen delitos'', y políticas que se diseñan sobre
+un subregistro. Esta dinámica consolida el miedo ciudadano y debilita la
+disposición a colaborar con las instituciones, reproduciendo el ciclo.
+En este marco, la cifra negra no es un error de medición inocuo, sino un
+factor activo en la persistencia de la criminalidad y de la
+desconfianza.
+
+\subsection{La cifra negra en Jalisco: magnitud y causas atribuibles a la autoridad}
+
+Para dimensionar el fenómeno, la Encuesta Nacional de Victimización y
+Percepción sobre Seguridad Pública (ENVIPE) del INEGI estimó que, en
+Jalisco, la cifra negra representó el \textbf{91.6\,\%} del total de
+actos delictivos ocurridos en 2023 [4], [7]. Es decir, más de nueve de
+cada diez delitos no fueron denunciados o, siéndolo, no derivaron en la
+apertura de una carpeta de investigación. A nivel nacional, la cifra
+negra fue de 92.9\,\% en el mismo año, y Jalisco ocupó el lugar 23 entre
+las 32 entidades federativas [4]. Un dato adicional matiza la magnitud
+del subregistro: incluso entre los delitos que sí fueron denunciados en
+Jalisco, solo el 70.2\,\% derivó en una carpeta de investigación
+[4]. Esto significa que la brecha institucional no se agota en la
+decisión de denunciar, sino que se extiende al procesamiento mismo de la
+denuncia.
+
+La ENVIPE distingue las causas de la no denuncia en dos grandes grupos:
+las atribuibles a la autoridad y las no atribuibles. Entre las primeras
+se encuentran la \textit{pérdida de tiempo} (el motivo individual más
+mencionado, con alrededor del 35\,\% de las respuestas en 2023), los
+\textit{trámites largos, burocráticos y difíciles} (11\,\%) y la
+\textit{desconfianza o actitud hostil de la autoridad}, que incluye el
+temor a tratos inadecuados, la revictimización o la sospecha de
+complicidad [7]. Aproximadamente dos terceras partes de los casos de no
+denuncia se asocian con este tipo de causas. Entre las causas no
+atribuibles figuran considerar el delito de poca importancia (por
+ejemplo, robos menores sin violencia), la falta de pruebas materiales y
+el miedo o amenazas directas por parte del agresor [4], [7]. Esta
+clasificación es clave para leer los resultados del presente trabajo: la
+no denuncia observada en JCV puede reflejar una mezcla de ambos grupos
+de causas, sin que las tablas agregadas permitan asignar proporciones
+causales precisas.
 
 \section{Metodología}
 
@@ -347,7 +417,6 @@ validación de una serie respecto de la otra (Fig.~\ref{fig:jcv_ensu}).
   \label{fig:jcv_ensu}
 \end{figure}
 
-
 \section{Discusión}
 
 Los resultados muestran cambios simultáneos, pero no idénticos, en los
@@ -364,16 +433,47 @@ demuestra que la confianza policial determine la conducta de denuncia.
 Los motivos declarados ayudan a matizar la lectura de la no denuncia. En
 2024, cuatro de cada diez respuestas válidas se concentraron en la
 percepción de que denunciar no sirve o implica pérdida de tiempo. Esto
-es consistente con una valoración baja de la utilidad esperada del
-trámite o con sus costos de tiempo; sin embargo, la encuesta no permite
-distinguir entre ambas explicaciones, pues las categorías aparecen
-agrupadas. La desconfianza en la autoridad constituye otro motivo
-relevante, junto con la poca importancia atribuida al delito, la falta
-de pruebas, el temor y las barreras de información o acceso. Por ello,
-la confianza institucional es parte de la explicación declarada, pero
-no la única. Tampoco se puede inferir de estos datos una ``crisis
-estructural'' ni atribuir la reducción de la percepción a cambios en la
-incidencia delictiva.
+es consistente con la teoría de la elección racional y los costes de
+transacción de la denuncia (sección II-A): si la utilidad esperada del
+trámite es baja y el costo de tiempo es alto, la abstención puede ser
+una decisión racional; sin embargo, la encuesta no permite distinguir
+entre ambas explicaciones, pues las categorías aparecen agrupadas. La
+desconfianza en la autoridad constituye otro motivo relevante, junto con
+la poca importancia atribuida al delito, la falta de pruebas, el temor y
+las barreras de información o acceso. Por ello, la confianza
+institucional es parte de la explicación declarada, pero no la única.
+
+Los datos descriptivos no permiten confirmar una ``crisis estructural''
+ni atribuir la reducción de la percepción a cambios en la incidencia
+delictiva. No obstante, el patrón observado —reducción moderada de la
+percepción y de la no denuncia, junto con persistencia de motivos
+atribuibles a la autoridad y aumento de la desconfianza declarada— es
+\textit{consistente} con los marcos teóricos de la elección racional y
+del círculo vicioso entre impunidad y desconfianza (secciones II-A y
+II-B). La consistencia teórica no equivale a evidencia causal; se
+requiere triangulación con datos de carpetas de investigación y con la
+cifra negra estimada por ENVIPE para avanzar en esa dirección.
+
+\subsection{La ``baja oficial'' de delitos frente a la percepción real}
+
+Un punto metodológico central para interpretar la divergencia entre los
+discursos oficiales de reducción delictiva y la persistencia del miedo
+es distinguir entre delitos ocurridos y delitos registrados. Las
+estadísticas del Secretariado Ejecutivo del Sistema Nacional de
+Seguridad Pública (SESNSP) contabilizan carpetas de investigación
+abiertas, no la cantidad real de delitos [5]. Si la ciudadanía deja de
+denunciar por cansancio o desconfianza, las carpetas disminuyen y las
+autoridades pueden interpretar ese descenso como una ``baja de la
+delincuencia'', cuando en realidad podría estar aumentando la cifra
+negra. Este fenómeno, que puede denominarse \textit{espejismo
+estadístico de las carpetas de investigación}, es especialmente
+relevante para los resultados del presente trabajo: la reducción de la
+no denuncia observada entre 2022 y 2024 puede reflejar tanto una mayor
+disposición a denunciar como una mejora en la eficiencia institucional,
+pero también una modificación en la composición de los delitos o en el
+contexto de victimización. Sin datos de carpetas de investigación y sin
+la cifra negra estimada por ENVIPE, no es posible distinguir entre estas
+interpretaciones.
 
 Como implicación práctica, los motivos reportados justifican evaluar
 medidas que reduzcan costos de tiempo y complejidad, faciliten la
@@ -426,15 +526,15 @@ de denunciar.
 
 \section*{Agradecimientos}
 
-Producto derivado del proyecto de investigación ``La percepcion de inseguridad en AMG'', apoyado por
-la Universidad de Guadalajara. Se agradece a
-Jalisco Cómo Vamos y al IIEG por la disponibilidad de sus datos
-abiertos.
+Producto derivado del proyecto de investigación ``La percepción de
+inseguridad en AMG'', apoyado por la Universidad de Guadalajara. Se
+agradece a Jalisco Cómo Vamos y al IIEG por la disponibilidad de sus
+datos abiertos.
 
 % REFERENCIAS (formato IEEE)
 \begingroup
 \small
-\renewcommand{\section}[2]{}  % para evitar que \section aparezca numerado
+\renewcommand{\section}[2]{}
 \begin{thebibliography}{99}
 
 \bibitem{jcvv2024}
@@ -457,9 +557,22 @@ IIEG, 2026. [En línea]. Disponible en:
 INEGI, \textit{Encuesta Nacional de Victimización y Percepción sobre
 Seguridad Pública (ENVIPE) 2024.} Aguascalientes, México: INEGI, 2024.
 
-\bibitem{inegi2020}
-INEGI, \textit{Censo de Población y Vivienda 2020.} Aguascalientes,
-México: INEGI, 2020.
+\bibitem{sesnsp2024}
+Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública
+(SESNSP), \textit{Incidencia delictiva del fuero común. Datos abiertos.}
+Ciudad de México, México: SESNSP, 2024. [En línea]. Disponible en:
+\url{https://www.gob.mx/sesnsp/acciones-y-programas/datos-abiertos-de-incidencia-delictiva}
+
+\bibitem{becker1968}
+G. S. Becker, ``Crime and punishment: An economic approach,''
+\textit{Journal of Political Economy}, vol. 76, no. 2, pp. 169--217,
+1968.
+
+\bibitem{iieg2024}
+Instituto de Información Estadística y Geográfica de Jalisco (IIEG),
+\textit{Cifra negra del delito en Jalisco, 2023.} Guadalajara, México:
+IIEG, 2024. [En línea]. Disponible en:
+\url{https://iieg.gob.mx/ns/wp-content/uploads/2024/09/Ficha-Cifra-negra-2024.pdf}
 
 \end{thebibliography}
 \endgroup
