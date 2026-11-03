@@ -1,0 +1,467 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+% Geometría: hoja carta, márgenes 1.7 cm, 2 columnas de ~8.9 cm
+\usepackage[letterpaper,margin=1.7cm]{geometry}
+\setlength{\columnsep}{0.4cm}
+
+% Codificación e idioma
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla,es-noshorthands]{babel}
+
+% Fuente Times New Roman (vía newtx)
+\usepackage{newtxtext,newtxmath}
+
+% Utilidades
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
+
+%Ruta de figuras (ajústala si tu estructura cambia)
+\graphicspath{{figuras/}{./figuras/}{../docs/figuras/}}
+
+%Formato de captions (INVENTUM)
+\captionsetup[figure]{
+  font=small, labelfont=bf, labelsep=period,
+  justification=centering, position=bottom
+}
+\renewcommand{\thetable}{\Roman{table}}
+\captionsetup[table]{
+  font=small, labelfont=bf, labelsep=newline,
+  justification=centering, position=top, name=TABLA
+}
+
+%Formato de encabezamientos estilo INVENTUM
+\titleformat{\section}
+  {\normalfont\bfseries\centering\MakeUppercase}
+  {\Roman{section}.}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.2ex plus .4ex}{0.8ex plus .2ex}
+
+\titleformat{\subsection}
+  {\normalfont\itshape}{\Alph{subsection}.}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{0.9ex plus .2ex}{0.5ex plus .1ex}
+
+\titleformat{\subsubsection}
+  {\normalfont\itshape}{\arabic{subsubsection})}{0.3em}{}
+\titlespacing*{\subsubsection}{0.3cm}{0.8ex plus .1ex}{0.4ex}
+
+\titleformat{\paragraph}[runin]
+  {\normalfont\itshape}{\alph{paragraph})}{0.3em}{}
+\titlespacing*{\paragraph}{0.6cm}{0.4ex}{0.4em}
+
+% Párrafos INVENTUM: sangría 0.5 cm, sin espacio entre párrafos
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{1.05}
+
+% DATOS DEL ARTÍCULO — EDITA AQUÍ
+\title{\vspace{-1.2cm}\textbf{\uppercase{Percepción de inseguridad y no
+denuncia del delito: análisis descriptivo comparativo 2022--2024 en Zapopan
+y el Área Metropolitana de Guadalajara}}}
+
+\author{%
+  \normalsize
+  Josué Uriel Martínez Ruíz\\[0.3em]
+  \footnotesize
+  Universidad de Guadalajara, 219872726, josue.martinez8727@alumnos.udg.mx\\
+}
+\date{Recibido: 05 de Noviembre del 2026}
+
+\begin{document}
+
+% Bloque superior (una columna, full width)
+\twocolumn[{%
+\begin{@twocolumnfalse}
+  \maketitle
+  \vspace{0.3em}
+  \noindent\rule{\textwidth}{0.4pt}
+  \vspace{0.2em}
+
+  % Resumen en español
+  \noindent\textbf{\textit{Resumen}}---%
+  Se describen los cambios en la percepción de inseguridad, la no denuncia
+  del delito y la confianza policial en Zapopan y el Área Metropolitana de
+  Guadalajara (AMG), mediante las encuestas de Jalisco Cómo Vamos (JCV) de
+  2022 y 2024 y una referencia contextual a la ENSU de marzo de 2026. La
+  percepción de inseguridad disminuyó 12.2 puntos porcentuales (pp) en el
+  AMG y 12.9 pp en Zapopan; la proporción de víctimas que no denunció
+  también descendió, 5.9 pp y 5.1 pp, respectivamente, aunque en Zapopan
+  se mantuvo en 68.7\%. Entre quienes no denunciaron, en 2024 destacaron
+  la percepción de que denunciar no sirve o implica pérdida de tiempo
+  (40.2\%), la desconfianza en la autoridad (17.1\%) y la poca importancia
+  atribuida al delito (15.9\%). El estudio es descriptivo y emplea la no
+  denuncia como indicador parcial asociado a la cifra negra, no como una
+  estimación completa de esta.
+  \vspace{0.5em}
+
+  \noindent\textbf{\textit{Palabras clave}}---%
+  cifra negra, denuncia del delito, confianza institucional, inseguridad
+  ciudadana, Zapopan.
+  \vspace{0.8em}
+
+  
+
+  \noindent\rule{\textwidth}{0.4pt}
+  \vspace{0.5em}
+\end{@twocolumnfalse}
+}]
+\makeatother
+
+\section{Introducción}
+
+La inseguridad constituye una preocupación relevante para la población
+del Área Metropolitana de Guadalajara (AMG). Las estadísticas basadas en
+denuncias y carpetas de investigación, sin embargo, no registran todos
+los delitos que ocurren. INEGI denomina \textit{cifra negra} a los delitos
+no denunciados y a aquellos que, aun denunciados, no dieron lugar al
+inicio de una carpeta de investigación [4]. Por ello, la cifra negra
+describe una brecha entre la victimización y su registro institucional.
+La percepción de inseguridad, por su parte, expresa una valoración
+subjetiva y no equivale por sí misma a la incidencia delictiva.
+
+La Encuesta Nacional de Seguridad Pública Urbana (ENSU) del INEGI
+reporta que, en marzo de 2026, el 75.5\% de la población del AMG
+consideró insegura su ciudad, con variaciones importantes por municipio:
+Guadalajara 90.2\%, Zapopan 70.8\%, Tlajomulco 70.1\%, Tonalá 68.1\% y
+Tlaquepaque 62.5\% [3]. Este trabajo describe conjuntamente la percepción de inseguridad, la no
+denuncia y la confianza en la policía a partir de las encuestas de
+Jalisco Cómo Vamos (JCV) de 2022 y 2024 [1], [2]. Los resultados de la
+ENSU se emplean únicamente como referencia contextual externa.
+
+\textit{Pregunta de investigación.} ¿Cómo variaron entre 2022 y 2024 la
+percepción de inseguridad, la proporción de víctimas que no denunciaron y
+los motivos declarados para no hacerlo en Zapopan y el AMG? El análisis
+no estima efectos causales ni contrasta la percepción con tendencias de
+incidencia delictiva, pues estas últimas no forman parte de las bases
+analizadas.
+
+\textit{Hipótesis.} La percepción de inseguridad mantiene niveles
+persistentemente altos aun cuando la incidencia delictiva oficial
+descienda y esta inconsistencia refleja una crisis de confianza
+institucional estructural, la disposición a denunciar no mejora al mismo
+ritmo que la percepción.
+
+\section{Metodología}
+
+\subsection{Fuentes de datos}
+
+Se utilizaron las tablas cruzadas de la VIII (2022) y IX (2024) Encuesta
+de Percepción sobre Calidad de Vida de Jalisco Cómo Vamos, con resultados
+para el conjunto metropolitano y desgloses municipales [1], [2]. Como
+referencia contextual se consultaron los resultados de la ENSU de marzo
+de 2026 difundidos por el IIEG [3]. Debido a las diferencias entre
+levantamientos, la ENSU no se incorpora como una tercera observación de
+la serie JCV.
+
+\subsection{Homologación de variables}
+
+La numeración de las preguntas cambió entre 2022 y 2024; por ejemplo, la
+percepción de seguridad en la ciudad pasó de \texttt{Q\_50} a
+\texttt{Q\_49}, y la confianza en la policía de \texttt{T\_Q\_74\_7} a
+\texttt{T\_Q\_72\_8}. Se construyó un mapa de equivalencia validado por
+el texto literal de cada ítem para asegurar la comparabilidad entre
+ambos levantamientos. En los motivos de no denuncia, la equivalencia
+conceptual es parcial, pues algunas respuestas se agruparon de manera
+distinta entre años.
+
+\subsection{Métricas construidas}
+
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
+  \item \textbf{Percepción de inseguridad}: porcentaje de personas que se
+        sienten ``nada'' o ``poco'' seguras en su ciudad.
+  \item \textbf{Proporción de no denuncia}: porcentaje de las víctimas de
+        algún delito que declaran \emph{no} haber denunciado ante la
+        autoridad. Es un indicador parcial asociado a la cifra negra:
+        las tablas disponibles no permiten identificar los delitos
+        denunciados en los que no se inició una carpeta de investigación.
+  \item \textbf{Desconfianza policial}: porcentaje que declara sentir
+        ``nada'' de confianza en la policía.
+\end{itemize}
+
+La cifra negra, en la definición utilizada por INEGI, incluye tanto los
+delitos no denunciados como los denunciados sin inicio de carpeta de
+investigación [4]. En consecuencia, el indicador de este estudio no debe
+interpretarse como una estimación completa de la cifra negra ni
+compararse directamente con la tasa oficial de ENVIPE. Se reportan
+porcentajes descriptivos a partir de las tablas cruzadas de JCV; para
+los motivos de no denuncia se excluyeron las respuestas ``No aplica'',
+``No sabe'', ``No sabría'' y ``No contestó'' del denominador.
+
+\section{Resultados}
+
+\subsection{Percepción de inseguridad por municipio}
+
+Entre 2022 y 2024, la proporción de respuestas de inseguridad disminuyó
+en todos los municipios observados. Para el conjunto del AMG pasó de
+57.2\% a 45.0\%, una reducción de 12.2 puntos porcentuales (pp). Zapopan
+registró el menor valor en 2024 (40.8\%),
+seguido por Tonalá (45.0\%) y Tlajomulco (45.1\%), mientras que
+Guadalajara cerró en 45.3\% (Fig.~\ref{fig:percepcion}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figuras/fig01_percepcion_por_municipio.pdf}
+  \caption{Percepción de inseguridad en la ciudad por municipio del AMG
+  (JCV 2022 vs 2024). Elaboración propia con datos de [1], [2].}
+  \label{fig:percepcion}
+\end{figure}
+
+\subsection{Proporción de víctimas que no denunciaron}
+
+La proporción de víctimas que declaró no haber denunciado disminuyó en
+el conjunto del AMG, de 65.1\% en 2022 a 59.2\% en 2024. En Zapopan
+también descendió, de 73.8\% a 68.7\%, aunque permaneció por encima del
+valor metropolitano en ambos años. El comportamiento no fue uniforme:
+entre 2022 y 2024 el indicador aumentó en Tlajomulco y Tonalá
+(Tabla~\ref{tab:cifra_negra}). Estos valores describen únicamente la no
+denuncia declarada y no la cifra negra completa definida por INEGI.
+
+\begin{table}[H]
+  \centering
+  \caption{Víctimas que declararon no haber denunciado, por municipio
+  del AMG, 2022 y 2024 (\%). Indicador parcial asociado a la cifra negra.}
+  \label{tab:cifra_negra}
+  \small
+  \begin{tabular}{lrrr}
+    \toprule
+    Municipio & 2022 & 2024 & $\Delta$ (pp) \\
+    \midrule
+    Total AMG     & 65.1 & 59.2 & $-5.9$ \\
+    El Salto      & 66.7 & 62.0 & $-4.7$ \\
+    Guadalajara   & 60.6 & 46.5 & $-14.1$ \\
+    Tlaquepaque   & 64.8 & 58.5 & $-6.3$ \\
+    Tlajomulco    & 59.1 & 64.8 & $+5.7$ \\
+    Tonalá        & 68.7 & 70.4 & $+1.7$ \\
+    Zapopan       & 73.8 & 68.7 & $-5.1$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Confianza en la policía}
+
+La desconfianza total en la policía (categoría ``nada'') bajó de 54.4\%
+a 42.5\% en el AMG, en Zapopan la reducción fue mayor (57.5\% $\to$
+34.1\%), aunque uno de cada tres habitantes sigue declarando
+desconfianza total (Fig.~\ref{fig:confianza}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figuras/fig02_confianza_policia.pdf}
+  \caption{Distribución de la confianza en la policía en Zapopan y el
+  total del AMG (2022 vs 2024).}
+  \label{fig:confianza}
+\end{figure}
+
+\subsection{Panorama de las tres métricas}
+
+La Fig.~\ref{fig:heatmap} sintetiza las tres métricas clave. La
+percepción de inseguridad, la no denuncia y la respuesta ``nada'' de
+confianza policial disminuyeron en Zapopan entre ambos levantamientos.
+Sin embargo, la proporción de no denuncia continuó siendo elevada.
+Estas tendencias agregadas no permiten establecer por sí solas una
+relación entre percepción, confianza y decisión individual de denunciar.
+
+\begin{figure*}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figuras/fig03_heatmap_3metricas.pdf}
+  \caption{Comparación de percepción, proporción de no denuncia
+  (indicador parcial asociado a la cifra negra) y respuestas ``nada''
+  de confianza en la policía por municipio (2022 y 2024). Los tonos
+  rojos representan valores más altos.}
+  \label{fig:heatmap}
+\end{figure*}
+
+\subsection{Brechas sociodemográficas}
+
+En 2024, la proporción de mujeres que manifestó sentirse poco o nada
+segura fue de 49.8\%, frente a 39.9\% entre los hombres, una brecha de
+9.9 pp. Por edad, el valor más alto correspondió al grupo de 45--59 años
+(51.3\%), seguido por el de 60 años o más (48.5\%). Estas diferencias
+son descriptivas y no se sometieron a pruebas de significancia
+(Fig.~\ref{fig:brechas}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figuras/fig04_brechas_sexo_edad.pdf}
+  \caption{Percepción de inseguridad por sexo y grupo de edad (AMG,
+  JCV 2022 vs 2024).}
+  \label{fig:brechas}
+\end{figure}
+
+\subsection{Razones para no denunciar}
+
+Los motivos declarados muestran que la decisión de no denunciar no se
+atribuye a una sola causa. En 2022, las respuestas más frecuentes fueron
+``No sirve para nada'' (23.2\%), ``Pérdida de tiempo'' (22.1\%) y ``No
+tenía pruebas'' (13.7\%). En 2024, la categoría conjunta ``No sirve para
+nada / Pérdida de tiempo'' concentró 40.2\%; le siguieron ``Desconfianza
+en la autoridad'' (17.1\%) y ``Delito de poca importancia'' (15.9\%).
+La desconfianza explícita en la autoridad aumentó de 10.5\% en 2022 a
+17.1\% en 2024 (6.6 pp). La comparación de la categoría de utilidad o
+tiempo debe interpretarse con cautela, ya que en 2024 ambas respuestas
+se presentan agrupadas. Otros motivos registrados incluyen falta de
+pruebas, temor al agresor o a una extorsión, desconocimiento del lugar
+para denunciar, una actitud negativa de la autoridad y trámites largos
+o difíciles [1], [2]. En conjunto, las respuestas apuntan a barreras
+percibidas de eficacia, tiempo y confianza, además de obstáculos de
+información, protección y acceso; no permiten determinar por sí solas
+el peso causal de cada barrera (Fig.~\ref{fig:razones}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figuras/fig05_razones_no_denuncia.pdf}
+  \caption{Principales motivos declarados para no denunciar en el AMG,
+  como porcentaje de respuestas válidas entre quienes no denunciaron
+  (2022 y 2024). Algunas categorías se agruparon entre años; la ausencia
+  de una barra no equivale necesariamente a una frecuencia de cero.}
+  \label{fig:razones}
+\end{figure}
+
+\subsection{Validación externa: JCV vs ENSU}
+
+Los resultados de JCV de 2024 y de la ENSU de marzo de 2026 ofrecen una
+referencia contextual, no una comparación directa. En los cuatro
+municipios con datos para ambos instrumentos, las diferencias van de
+11.2 pp en San Pedro Tlaquepaque a 44.9 pp en Guadalajara. La distancia
+puede relacionarse con diferencias de periodo, diseño muestral y
+formulación de los reactivos, además de cambios en el contexto. Por
+tanto, no debe atribuirse a una sola causa ni interpretarse como una
+validación de una serie respecto de la otra (Fig.~\ref{fig:jcv_ensu}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\columnwidth]{figuras/fig06_jcv_vs_ensu.pdf}
+  \caption{Comparación de los niveles de percepción entre JCV
+  (octubre 2024) y ENSU (marzo 2026). Instrumentos distintos: no son
+  series comparables punto a punto.}
+  \label{fig:jcv_ensu}
+\end{figure}
+
+
+\section{Discusión}
+
+Los resultados muestran cambios simultáneos, pero no idénticos, en los
+indicadores. Entre 2022 y 2024 disminuyeron la percepción de inseguridad
+(12.2 pp en el AMG y 12.9 pp en Zapopan) y la proporción de víctimas que
+no denunciaron (5.9 pp y 5.1 pp, respectivamente). Esta última, no
+obstante, permaneció en 59.2\% para el AMG y 68.7\% para Zapopan; además,
+aumentó en Tlajomulco y Tonalá. La respuesta ``nada'' de confianza en la
+policía también disminuyó en el agregado, mientras que la desconfianza
+en la autoridad como motivo declarado para no denunciar aumentó 6.6 pp.
+Este contraste se refiere a indicadores y denominadores distintos; no
+demuestra que la confianza policial determine la conducta de denuncia.
+
+Los motivos declarados ayudan a matizar la lectura de la no denuncia. En
+2024, cuatro de cada diez respuestas válidas se concentraron en la
+percepción de que denunciar no sirve o implica pérdida de tiempo. Esto
+es consistente con una valoración baja de la utilidad esperada del
+trámite o con sus costos de tiempo; sin embargo, la encuesta no permite
+distinguir entre ambas explicaciones, pues las categorías aparecen
+agrupadas. La desconfianza en la autoridad constituye otro motivo
+relevante, junto con la poca importancia atribuida al delito, la falta
+de pruebas, el temor y las barreras de información o acceso. Por ello,
+la confianza institucional es parte de la explicación declarada, pero
+no la única. Tampoco se puede inferir de estos datos una ``crisis
+estructural'' ni atribuir la reducción de la percepción a cambios en la
+incidencia delictiva.
+
+Como implicación práctica, los motivos reportados justifican evaluar
+medidas que reduzcan costos de tiempo y complejidad, faciliten la
+orientación sobre dónde denunciar, mejoren la comunicación sobre el
+seguimiento de los casos y ofrezcan condiciones de atención seguras a
+las víctimas. Estas son líneas de acción derivadas de las barreras
+declaradas; su efectividad requiere evaluación específica.
+
+\subsection{Limitaciones}
+
+El estudio utiliza tablas cruzadas agregadas, por lo que no permite
+analizar trayectorias individuales, intervalos de confianza ni
+significancia estadística. Las categorías de motivos de no denuncia
+tampoco son idénticas entre 2022 y 2024: por ejemplo, ``No sirve para
+nada'' y ``Pérdida de tiempo'' aparecen separadas en 2022 y agrupadas en
+2024. Además, el indicador de no denuncia no incluye los delitos
+denunciados sin inicio de carpeta, por lo que no equivale a la cifra
+negra completa de ENVIPE. Finalmente, JCV y ENSU difieren en periodo,
+diseño y formulación de preguntas; sus niveles no son directamente
+intercambiables. Los resultados deben leerse como una descripción
+comparativa de las categorías disponibles, no como evidencia causal.
+
+\section{Conclusiones}
+
+Entre 2022 y 2024, la percepción de inseguridad disminuyó 12.2 pp en el
+AMG y 12.9 pp en Zapopan. La proporción de víctimas que no denunció
+también bajó, en 5.9 pp y 5.1 pp, respectivamente, aunque en 2024
+continuó en 59.2\% para el AMG y 68.7\% para Zapopan. La desconfianza en
+la autoridad como motivo declarado para no denunciar aumentó 6.6 pp.
+Estos datos muestran que la reducción de la no denuncia y la persistencia
+de barreras declaradas pueden coexistir; no bastan para afirmar una
+crisis estructural ni para establecer una relación causal entre
+percepción, confianza y denuncia.
+
+Los motivos más mencionados en 2024 —la percepción de inutilidad o el
+costo de tiempo, la desconfianza en la autoridad y la poca importancia
+atribuida al delito— señalan ámbitos que las instituciones pueden
+examinar: simplificación de trámites, orientación accesible, seguimiento
+transparente de denuncias y atención que tome en cuenta la seguridad de
+las víctimas. La brecha de género observada en la percepción (9.9 pp en
+2024) también justifica que futuras evaluaciones desagreguen resultados
+por sexo y otras características sociodemográficas.
+
+Como trabajo futuro se propone: (i) triangular las encuestas con datos
+de carpetas de investigación y con la cifra negra estimada por ENVIPE;
+(ii) incorporar microdatos y errores muestrales para evaluar diferencias
+entre grupos y años; y (iii) estudiar, con modelos individuales, la
+relación entre confianza, características de la victimización y decisión
+de denunciar.
+
+\section*{Agradecimientos}
+
+Producto derivado del proyecto de investigación ``La percepcion de inseguridad en AMG'', apoyado por
+la Universidad de Guadalajara. Se agradece a
+Jalisco Cómo Vamos y al IIEG por la disponibilidad de sus datos
+abiertos.
+
+% REFERENCIAS (formato IEEE)
+\begingroup
+\small
+\renewcommand{\section}[2]{}  % para evitar que \section aparezca numerado
+\begin{thebibliography}{99}
+
+\bibitem{jcvv2024}
+Jalisco Cómo Vamos, \textit{IX Encuesta de Percepción sobre Calidad de
+Vida, octubre 2024. Bases de datos de tablas cruzadas.} Guadalajara,
+México: JCV, 2024.
+
+\bibitem{jcvv2022}
+Jalisco Cómo Vamos, \textit{VIII Encuesta de Percepción sobre Calidad de
+Vida, 2022. Bases de datos de tablas cruzadas.} Guadalajara, México:
+JCV, 2022.
+
+\bibitem{ensu2026}
+INEGI, \textit{Encuesta Nacional de Seguridad Pública Urbana (ENSU).
+Principales resultados para Jalisco, marzo 2026.} Guadalajara, México:
+IIEG, 2026. [En línea]. Disponible en:
+\url{https://iieg.gob.mx/ns/?page_id=25306}
+
+\bibitem{envipe2024}
+INEGI, \textit{Encuesta Nacional de Victimización y Percepción sobre
+Seguridad Pública (ENVIPE) 2024.} Aguascalientes, México: INEGI, 2024.
+
+\bibitem{inegi2020}
+INEGI, \textit{Censo de Población y Vivienda 2020.} Aguascalientes,
+México: INEGI, 2020.
+
+\end{thebibliography}
+\endgroup
+
+\end{document}
